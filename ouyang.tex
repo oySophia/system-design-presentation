@@ -1,0 +1,110 @@
+\documentclass[cjk,slidestop,mathserif]{beamer}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{default}
+%\usepackage{xcolor}
+\usepackage{CJK}
+\usepackage{graphicx}
+%\useoutertheme{infolines}%将作者名字和页码标下来，但是还是没有运行出来 
+%\usecolortheme{default}
+\useoutertheme{infolines}
+%\usetheme{umbc1}	%这个东西因为不是内嵌的，所以最后没成功，查阅？？？？？
+\usetheme{Warsaw}	%在rochester情况下面，可以现实页码，但是如果将其该改成了warsaw，则就显示不了了，可能是具体设置的问题
+\usecolortheme{crane} %others whale, seahorse,dolphin
+\usecolortheme{seagull} %orchid, lily
+
+\setbeamertemplate{items}[ball]%把item枚举出来的作为圆！还有一个enumerate，可以是1，2，3等！！！
+
+\setbeamertemplate{blocks}[rounded][shadow=true]%这个地方只是使用定理时，矩形区域才是有阴影的
+\setbeamertemplate{navigation symbols}{}%去除底部比较酷的工具条，因为实际应用的很少
+%\setbeamertemplate{footline}%[frame number]%这里是为每页的最下面加上页码号!!!这个的作用！！！
+
+\begin{document}
+\begin{CJK}{UTF8}{gkai}
+\title{Ceph: A Scalable, High-Performance Distributed File System}
+\author{欧阳梦云}
+\institute[HUST]{华中科技大学 ~~ 光电国家实验室}
+\date{\today}
+\frame{\titlepage}%划分，到这里为止，就是第一页的显示
+ 
+%\frame{\tableofcontents}%这个东西的作用就是将subsection的东西啥的列做目录
+\section{Motivation}
+\begin{frame}
+ \frametitle{Background and Present situation}
+%能分条列出来是很好的,或者用box给出 
+\end{frame}
+
+\begin{frame}
+ \frametitle{Design Goals}
+ 
+\end{frame}
+
+\section{Ceph's Structure}
+\begin{frame}
+ \frametitle{System's Overview}
+ 
+\end{frame}
+
+\subsection{Clients}
+
+\subsection{Metadata Servers cluster (MDS)}
+\subsection{Object Storage Devices cluster(OSDs)}
+
+\section{Evaluation}
+\begin{frame}
+ \frametitle{The Tests' platform}
+ 
+\end{frame}
+
+\subsection{Data Performance}
+\begin{frame}
+ \frametitle{OSD Throughput}
+ 
+\end{frame}
+
+\begin{frame}
+ \frametitle{Write Latency}
+ 
+\end{frame}
+
+\begin{frame}
+ \frametitle{Data Distribution and Scalability}
+ 
+\end{frame}
+
+\subsection{Metadata Performance}
+\begin{frame}
+ \frametitle{Metadata Update and Read Latency}
+ 
+\end{frame}
+
+\begin{frame}
+ \frametitle{Metadata Scaling}
+ 
+\end{frame}
+
+
+\section{Conclusion and Future work}
+\begin{frame}
+ 
+\end{frame}
+
+%\begin{frame}
+% \frametitle{存储效率和可靠性背景}
+% \vspace{20pt}
+% \begin{exampleblock}{背景}
+%  随着分布式存储系统规模的不断扩大,系统可靠性的问题逐渐受到人们的重视。系统中磁盘数量的增加和单块磁盘容量的增长使得系统错误率不断增长,任何一次数据丢失都会造成巨大的损失。 \\
+% \vspace{4pt}
+%  可靠性是系统性能中的重要组成部分．对于存储系统而言，数据服务的可靠性是可靠性研究的核心．存储系统的可靠性描述了系统能有效地提供数据服务的能力，用系统能正常提供服务的概率表示．
+% \end{exampleblock}
+%\end{frame}
+
+\frame{
+    \frametitle{Questions and answers}
+    \begin{figure}
+        \includegraphics[width=6cm]{faq.jpg}
+    \end{figure}
+}
+
+\end{CJK}
+\end{document}
